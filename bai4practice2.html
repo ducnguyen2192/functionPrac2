@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+    <script>
+        inputNum()
+        function inputNum(){
+            let x = prompt("input character to check if it is a number")
+            if (x.length !== 0 || x.toString().length !== 0){
+                let y = isNumber(x)
+                alert( "is " + '"' + x + '"'  + " a number? " + y)
+            } else {
+                alert("you didn't input anything. Please refresh the page and input any try again")
+            }
+
+        }
+
+        function isNumber(num){
+            let isNum = true;
+            if(isNaN(num)){
+                isNum = false
+                return isNum
+            } else {
+                return isNum
+            }
+        }
+
+    </script>
+</body>
+</html>

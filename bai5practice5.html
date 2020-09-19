@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+    Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+    <script>
+        inputNum()
+        function inputNum(){
+            debugger
+            let x = parseFloat(prompt("input number 1"))
+            let y = parseFloat(prompt("input number 2"))
+            let z = parseFloat(prompt("input number 3"))
+            if (x.toString().length !== 0 || y.toString().length !== 0 || z.toString().length !== 0){
+                let a = findMin(x, y, z)
+                alert(a + " is the lowest number of the 3 you have just input")
+            } else if (x.toString().length === 0 || y.toString().length === 0 || z.toString().length === 0){
+                alert("please input all numbers")
+            }
+
+        }
+
+        function findMin(num1,num2,num3){
+            let arr =[num1,num2,num3];
+            let min = arr[0]
+            for(let i = 1; i<arr.length;i++){
+                if (min > arr[i]){
+                    min = arr[i]
+                }
+            }
+            return min
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai7</title>
+</head>
+<body>
+
+<script>
+    inputNum()
+    function inputNum() {
+        let a = prompt("input number 1")
+        let b = prompt("input number 2")
+        let z = switchNum(a, b)
+        alert("1st number was " + a + " and is now " + z[0] + "\r\n" + "2nd number was " + b + " and is now " + z[1] )
+    }
+
+    function switchNum(num1, num2){
+        let x;
+        x = num1;
+        num1 = num2;
+        num2 = x
+        return [num1, num2]
+    }
+
+</script>
+</body>
+</html>

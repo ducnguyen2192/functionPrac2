@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai6</title>
+</head>
+<body>
+
+
+<script>
+    inputNum()
+    function inputNum() {
+        debugger
+        let x = prompt("input number")
+        let y = findMin(x)
+        if (!isNaN(x)) {
+            if (x.toString().length !== 0) {
+                if (y == 1) {
+                    alert(x + " is greater or equal to 0")
+                } else {
+                    alert(x + " is less than 0")
+                }
+            } else {
+                alert("please input a valid number")
+            }
+        } else {
+            alert("please input a valid number")
+        }
+    }
+
+    function findMin(num){
+        if (num >= 0){
+            return 1
+        } else {
+            return 0
+        }
+    }
+
+    </script>
+</body>
+</html>

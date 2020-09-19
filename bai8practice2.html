@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai8</title>
+</head>
+<body>
+
+    <script>
+        inputNum()
+        function inputNum() {
+            debugger
+            let x = prompt("input number")
+            let y = reverseNum(x)
+            if (!isNaN(x)) {
+                if (x.toString().length !== 0) {
+                    alert(y)
+                } else {
+                    alert("please input a valid number")
+                }
+            } else {
+                alert("please input a valid number")
+            }
+        }
+
+        function reverseNum(num){
+            let arr = []
+            num = num.toString();
+            for(let i = num.length-1; i>=0; i--){
+                arr.push(num.charAt(i))
+            }
+            return arr
+        }
+
+    </script>
+</body>
+</html>

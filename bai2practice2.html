@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2practice2</title>
+</head>
+<body>
+    <script>
+        inputSide()
+        function inputSide(){
+            let x = parseFloat(prompt("input radius to find out area and circumference of a circle"))
+            if(!isNaN(x)) {
+                if (x.toString().length !== 0){
+                    let a = calArea(x)
+                    let c = calCir(x)
+                    alert("area of the circle is " + a)
+                    alert("circumference of the circle is " + c)
+                } else {
+                    alert("please refresh the page and input a valid number for the radius")
+                }
+
+            } else {
+                alert("please refresh the page and input a valid number for the radius")
+            }
+        }
+
+        function calArea(radius){
+            return radius * radius * Math.PI
+        }
+
+        function calCir(radius){
+            return 2 * radius * Math.PI
+        }
+    </script>
+</body>
+</html>
